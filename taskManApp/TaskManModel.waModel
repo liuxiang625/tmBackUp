@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog>
+
+<dbInfo name="TaskManModel" uuid="DEB2380315EE8E47AF7052ECFC4FADBC"/>
+
+<dataClasses name="Action" className="Action" collectionName="ActionCollection" scope="public" uuid="1DF73D2118AF35428794CE028A6B8736" tablePos="3">
+
+	<extraProperties ____objectunic="true" panelColor="#CCC1D9">
+
+		<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+			<position ____objectunic="true" X="479" Y="27"/>
+</panel>
+</extraProperties>
+
+	<attributes name="ID" kind="storage" scope="public" uuid="CA3934F9BABD2248AE161C2E2DB9B7D8" fieldPos="1" unique="true" autosequence="true" type="long" primKey="true"/>
+
+	<attributes name="actor" kind="relatedEntity" scope="public" type="User" uuid="686C7626CD9CD143AEFDD9A8C9B059DA" fieldPos="2" path="User"/>
+
+	<attributes name="targetTask" kind="relatedEntity" scope="public" type="Task" uuid="16A68263763EDE48BB8F04F7261A9A96" fieldPos="3" path="Task"/>
+
+	<attributes name="comment" kind="storage" scope="public" uuid="1774F6B025CA324BB7C62CFB9B2DD7AF" fieldPos="4" type="string"/>
+
+	<attributes name="time" kind="storage" scope="public" uuid="2634D68E2577F44FAE02B604FCF0E715" fieldPos="5" type="string"/>
+
+</dataClasses>
+
+<dataClasses name="Task" className="Task" collectionName="TaskCollection" scope="public" uuid="48E78A81DA934CB4865EF8C740E2EE2B" tablePos="2">
+
+	<extraProperties ____objectunic="true" panelColor="#B8CCE4">
+
+		<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+			<position ____objectunic="true" X="461" Y="296"/>
+</panel>
+</extraProperties>
+
+	<attributes name="ID" kind="storage" scope="public" uuid="D2589E8A82D24917B8B3DE37F3A5FC67" fieldPos="1" unique="true" autosequence="true" type="long" primKey="true"/>
+
+	<attributes name="name" kind="storage" scope="public" uuid="BDEDE0B595E54E879666D375D83AA5E7" fieldPos="2" type="string"/>
+
+	<attributes name="manager" kind="relatedEntity" scope="public" type="User" uuid="385406088C26194BA1C06FFB43397CB7" fieldPos="3" path="User"/>
+
+	<attributes name="owner" kind="relatedEntity" scope="public" type="User" uuid="D02CEC29575E9142B44532FCDAD368B8" fieldPos="4" path="User"/>
+
+	<attributes name="startDate" kind="storage" scope="public" uuid="C46E41124E238149AA7CD7BA9F7B3BA2" fieldPos="5" type="date"/>
+
+	<attributes name="dueDate" kind="storage" scope="public" uuid="D9D3D37FF383604887AD4AFF0C32341A" fieldPos="6" type="date"/>
+
+	<attributes name="title" kind="storage" scope="public" uuid="1E60516131CAB2448E30D2D6B1111392" fieldPos="7" type="string"/>
+
+	<attributes name="description" kind="storage" scope="public" uuid="14981D0FB0E72F4AB4050ECFD21CD4FC" fieldPos="8" type="string"/>
+
+	<attributes name="status" kind="storage" scope="public" uuid="323FCC35C657D74FA7E72B5869A062AD" fieldPos="9" type="string"/>
+
+	<attributes name="report" kind="storage" scope="public" uuid="246AAE943C11D44EB1492C275D088DD7" fieldPos="10" type="string"/>
+
+	<attributes name="priority" kind="storage" scope="public" uuid="E4E466A8E7684645BC659BD7510AC149" fieldPos="11" type="string"/>
+
+	<attributes name="actions" kind="relatedEntities" scope="public" type="ActionCollection" reversePath="true" path="targetTask"/>
+
+</dataClasses>
+
+<dataClasses name="User" className="User" collectionName="UserCollection" scope="public" uuid="B860C1211EFF4A86B5B96371791A8D16" tablePos="1">
+
+	<extraProperties ____objectunic="true" panelColor="#B7DDE8">
+
+		<panel ____objectunic="true" isOpen="true" pathVisible="true">
+
+			<position ____objectunic="true" X="46" Y="78"/>
+</panel>
+</extraProperties>
+
+	<attributes name="ID" kind="storage" scope="public" uuid="E4DE022E3A784081BC08D314E2521240" fieldPos="1" unique="true" autosequence="true" type="long" primKey="true"/>
+
+	<attributes name="fullName" kind="storage" scope="public" uuid="670DB6247878434EA60CEAA17E8D291F" fieldPos="2" type="string"/>
+
+	<attributes name="logIn" kind="storage" scope="public" uuid="7D949E8A9B13E248BB2A84F61410E01E" fieldPos="3" type="string"/>
+
+	<attributes name="password" kind="storage" scope="public" uuid="8524B6429BD3FD409734CC63AEFC6D55" fieldPos="4" type="string"/>
+
+	<attributes name="role" kind="storage" scope="public" uuid="B1F3D5F4CF5DBF4C8C56C2B357DD8DF7" fieldPos="5" type="string"/>
+
+	<attributes name="department" kind="storage" scope="public" uuid="F27F2A53DBD82C42A0982D3007611030" fieldPos="6" type="string"/>
+
+	<attributes name="email" kind="storage" scope="public" uuid="9D1A5F1B55D15C478466D89C1321D0B5" fieldPos="7" type="string"/>
+
+	<attributes name="phone" kind="storage" scope="public" uuid="B271EDFC88802341AF728FC2DBFBC926" fieldPos="8" type="string"/>
+
+	<attributes name="fax" kind="storage" scope="public" uuid="65D9A84B0F14414184F69CB125EF39F4" fieldPos="9" type="string"/>
+
+	<attributes name="location" kind="storage" scope="public" uuid="E3C3BE7AAA600A47A8226069AB19B782" fieldPos="10" type="string"/>
+
+	<attributes name="taskCreated" kind="relatedEntities" scope="public" type="TaskCollection" reversePath="true" path="manager"/>
+
+	<attributes name="taskOwned" kind="relatedEntities" scope="public" type="TaskCollection" reversePath="true" path="owner"/>
+
+	<attributes name="actionsMade" kind="relatedEntities" scope="public" type="ActionCollection" reversePath="true" path="actor"/>
+
+	<methods name="addUser" applyTo="dataClass" scope="public" from="guidedModel.User.methods.addUser"/>
+
+</dataClasses>
+</EntityModelCatalog>

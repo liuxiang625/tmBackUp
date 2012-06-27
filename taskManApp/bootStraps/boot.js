@@ -1,0 +1,1 @@
+﻿/*** @author admin*///http handler for mobile dispatchingapplication.addHttpRequestHandler('\\/$','httpDispatcher.js', 'dispatchHandler');directory.setLoginListener("taskManLoginListener");

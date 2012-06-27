@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head>
+
+
+
+
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Recipes template</title></head><body>
+<h1>Template for desktop and mobile project<br>
+</h1>
+<h2><img src="./preview.png" alt="recipes preview icon" valign="top" align="right" hspace="10" vspace="10">level </h2>
+<p>medium</p>
+<h2>Description</h2>
+<p>This is a demo template explaining how to dispatch an http request
+depending on different variables. In this example, we want to root the
+request for mobile divices, so the variables will be the device and the
+presence of a file designed for mobile.</p>
+<!-- p>This project template shows the running results of the tutorial available bellow.</p -->
+<h2>Introduced technologies</h2>
+<ol>
+  <li>Http rooting and addHttpRequestHandler<br>
+</li>
+  <li>Creation of different interfaces for mobile and desktop.<br>
+</li></ol>
+
+<br>
+<h2>How to</h2>
+In order to add a file designed for mobile device (for smartphone or tablet) <span style="font-weight: bold;">right selected Add &gt; New Page for Smartphone / tablets</span>. <br>
+<br>
+<span style="font-weight: bold;">A) </span>Fisrt of all, <span style="font-weight: bold;">add the request handler </span>in the bootstrap js file.<br>
+<br>
+&nbsp;&nbsp;&nbsp; - Add the Js file at any place in the project. In the demo :&nbsp; <span style="font-weight: bold;">folder bootStrap &gt; boot.js</span>.<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; - Right click on the new file and choose <span style="font-weight: bold;">Role &gt; Bootstrap File</span><br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; - Into the file add the request handler. We are
+catching only the request ending by "/". Your have to notice where is
+the js file (here <span style="font-weight: bold;">httpDispatcher.js</span> in the project directory root) containing the function to call,&nbsp; here <span style="font-weight: bold;">dispatchHandler</span>.<br>
+<br>
+&nbsp;&nbsp;&nbsp;<span style="font-weight: bold; font-style: italic;"> application.addHttpRequestHandler('\\/$','httpDispatcher.js', 'dispatchHandler');</span><br>
+&nbsp;&nbsp;&nbsp; <br><span style="font-weight: bold;">
+B)</span> In&nbsp; dispatchHandler, we are looking for a mobile device into
+the request's user agent. Depending on what we find, we look for the
+presence of a file designed for mobile platefome in the webfolder
+(smartphone, tablet…).<br>
+<br><span style="font-weight: bold;">
+C) </span>Then we update the header with the new URL :&nbsp; location response.headers.location = url<br>
+&nbsp;&nbsp;&nbsp; <br>
+<br><span style="font-weight: bold;">
+Note</span>. We assume that into every mobile folders (smartphone, tablet) all the roots files are named index.html.<br>
+<br>
+
+</body></html>

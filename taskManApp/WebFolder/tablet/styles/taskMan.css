@@ -176,19 +176,9 @@
 
 #navigationView2 #view-manager2 #view10 #header10 #title10 {
 	 top: 0px;
-	 bottom: -2px;
+	 bottom: -3px;
 	 left: 0px;
-	 right: -2px;
-	
-	 position: absolute;
-	 
-}
-
-#navigationView2 #view-manager2 #view10 #header10 #back-buttom10 {
-	 width: 50px;
-	 height: 29px;
-	 top: 7px;
-	 left: 20px;
+	 right: -4px;
 	
 	 position: absolute;
 	 
@@ -465,21 +455,10 @@
 }
 
 #navigationView2 #view-manager2 #view9 #body9 #label3 {
-	 width: 86px;
+	 width: 93px;
 	 height: 20px;
-	 top: 171px;
-	 left: 59px;
-	
-	 position: absolute;
-	 font-size: 17px;
-	 
-}
-
-#navigationView2 #view-manager2 #view9 #body9 #textField3 {
-	 width: 209px;
-	 height: 44px;
-	 top: 159px;
-	 left: 150px;
+	 top: 174px;
+	 left: 80px;
 	
 	 position: absolute;
 	 font-size: 17px;
@@ -487,31 +466,20 @@
 }
 
 #navigationView2 #view-manager2 #view9 #body9 #label4 {
-	 width: 76px;
+	 width: 83px;
 	 height: 20px;
-	 top: 251px;
-	 left: 69px;
+	 top: 278px;
+	 left: 80px;
 	
 	 position: absolute;
-	 
-}
-
-#navigationView2 #view-manager2 #view9 #body9 #textField4 {
-	 width: 209px;
-	 height: 44px;
-	 top: 239px;
-	 left: 150px;
-	
-	 position: absolute;
-	 font-size: 17px;
 	 
 }
 
 #navigationView2 #view-manager2 #view9 #body9 #label4 {
-	 width: 76px;
+	 width: 83px;
 	 height: 20px;
-	 top: 251px;
-	 left: 69px;
+	 top: 278px;
+	 left: 80px;
 	
 	 position: absolute;
 	 font-size: 17px;
@@ -519,31 +487,20 @@
 }
 
 #navigationView2 #view-manager2 #view9 #body9 #label5 {
-	 width: 77px;
+	 width: 84px;
 	 height: 20px;
-	 top: 331px;
-	 left: 68px;
+	 top: 174px;
+	 left: 405px;
 	
 	 position: absolute;
-	 
-}
-
-#navigationView2 #view-manager2 #view9 #body9 #textField5 {
-	 width: 209px;
-	 height: 44px;
-	 top: 319px;
-	 left: 150px;
-	
-	 position: absolute;
-	 font-size: 17px;
 	 
 }
 
 #navigationView2 #view-manager2 #view9 #body9 #label5 {
-	 width: 77px;
+	 width: 84px;
 	 height: 20px;
-	 top: 331px;
-	 left: 68px;
+	 top: 174px;
+	 left: 405px;
 	
 	 position: absolute;
 	 font-size: 17px;
@@ -553,8 +510,8 @@
 #navigationView2 #view-manager2 #view9 #body9 #signUpButton {
 	 width: 209px;
 	 height: 44px;
-	 top: 402px;
-	 left: 396px;
+	 top: 526px;
+	 left: 405px;
 	
 	 position: absolute;
 	 font-size: 17px;
@@ -577,7 +534,7 @@
 	 width: 151px;
 	 height: 34px;
 	 top: 120px;
-	 left: 396px;
+	 left: 405px;
 	
 	 position: absolute;
 	 text-align: left;
@@ -590,7 +547,7 @@
 	 width: 61px;
 	 height: 35px;
 	 top: 119px;
-	 left: 551px;
+	 left: 560px;
 	
 	 position: absolute;
 	 text-decoration: underline;
@@ -613,10 +570,10 @@
 }
 
 #navigationView2 #view-manager2 #view9 #body9 #signUperrDiv {
-	 width: 241px;
+	 width: 221px;
 	 height: 55px;
-	 top: 475px;
-	 left: 378px;
+	 top: 469px;
+	 left: 403px;
 	
 	 position: absolute;
 	 font-size: 16px;
@@ -627,8 +584,275 @@
 #navigationView2 #view-manager2 #view8 #body8 #loginErrorDiv {
 	 width: 205px;
 	 height: 49px;
-	 top: 148px;
+	 top: 137px;
 	 left: 396px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 color: rgb(191, 0, 0);
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label6 {
+	 width: 52px;
+	 height: 20px;
+	 top: 174px;
+	 left: 733px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #textField1 {
+	 width: 209px;
+	 height: 44px;
+	 top: 199px;
+	 left: 733px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label6 {
+	 width: 52px;
+	 height: 20px;
+	 top: 174px;
+	 left: 733px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label7 {
+	 width: 31px;
+	 height: 20px;
+	 top: 278px;
+	 left: 733px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #textField2 {
+	 width: 209px;
+	 height: 44px;
+	 top: 303px;
+	 left: 733px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label7 {
+	 width: 31px;
+	 height: 20px;
+	 top: 278px;
+	 left: 733px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label7 {
+	 width: 31px;
+	 height: 20px;
+	 top: 278px;
+	 left: 733px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label8 {
+	 width: 45px;
+	 height: 20px;
+	 top: 388px;
+	 left: 733px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #textField6 {
+	 width: 209px;
+	 height: 44px;
+	 top: 413px;
+	 left: 733px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label8 {
+	 width: 45px;
+	 height: 20px;
+	 top: 388px;
+	 left: 733px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label8 {
+	 width: 45px;
+	 height: 20px;
+	 top: 388px;
+	 left: 733px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label9 {
+	 width: 70px;
+	 height: 20px;
+	 top: 388px;
+	 left: 80px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label9 {
+	 width: 70px;
+	 height: 20px;
+	 top: 388px;
+	 left: 80px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label9 {
+	 width: 70px;
+	 height: 20px;
+	 top: 388px;
+	 left: 80px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label10 {
+	 width: 62px;
+	 height: 20px;
+	 top: 278px;
+	 left: 405px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label10 {
+	 width: 62px;
+	 height: 20px;
+	 top: 278px;
+	 left: 405px;
+	
+	 position: absolute;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label10 {
+	 width: 62px;
+	 height: 20px;
+	 top: 278px;
+	 left: 405px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #label12 {
+	 width: 89px;
+	 height: 20px;
+	 top: 388px;
+	 left: 405px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #signUpLoginField {
+	 width: 207px;
+	 height: 44px;
+	 top: 199px;
+	 left: 80px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #signUpPasswordField {
+	 width: 207px;
+	 height: 44px;
+	 top: 303px;
+	 left: 80px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #signUpConfirmPwField {
+	 width: 207px;
+	 height: 44px;
+	 top: 413px;
+	 left: 80px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #signUpFullNameField {
+	 width: 209px;
+	 height: 44px;
+	 top: 199px;
+	 left: 405px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #signUpLocationField {
+	 width: 209px;
+	 height: 44px;
+	 top: 303px;
+	 left: 405px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #signUpDeptSelect {
+	 width: 209px;
+	 height: 44px;
+	 top: 413px;
+	 left: 405px;
+	
+	 position: absolute;
+	 font-size: 17px;
+	 
+}
+
+#navigationView2 #view-manager2 #view9 #body9 #passwordConfirmErrorDiv {
+	 width: 209px;
+	 height: 44px;
+	 top: 476px;
+	 left: 77px;
 	
 	 position: absolute;
 	 font-size: 17px;

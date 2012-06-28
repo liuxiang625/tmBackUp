@@ -2,6 +2,9 @@
 WAF.onAfterInit = function onAfterInit() {// @lock
 
 // @region namespaceDeclaration// @startlock
+	var signUpDeptSelect = {};	// @select
+	var documentEvent = {};	// @document
+	var signUpConfirmPwField = {};	// @textField
 	var signInButton = {};	// @button
 	var signUpButton = {};	// @button
 	var textToSignIn = {};	// @richText
@@ -9,8 +12,30 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	var introSignUpButton = {};	// @button
 	var introSignInButton = {};	// @button
 // @endregion// @endlock
-
+ deptArray = [];
 // eventHandlers// @lock
+
+	signUpDeptSelect.change = function signUpDeptSelect_change (event)// @startlock
+	{// @endlock
+		 WAF.sources.signUpObject.department = $$("signUpDeptSelect").getValue()
+	};// @lock
+
+	documentEvent.onLoad = function documentEvent_onLoad (event)// @startlock
+	{// @endlock
+		deptArray = [{deptName: ''}, {deptName: 'Tech'}, {deptName:'Management'},{deptName:'Operation'},{deptName:'Sales'},{deptName:'Marketing'}];
+		sources.deptArray.sync();
+	};// @lock
+
+	signUpConfirmPwField.blur = function signUpConfirmPwField_blur (event)// @startlock
+	{// @endlock
+		if($$("signUpPasswordField").getValue() != $$("signUpConfirmPwField").getValue()) {
+			$("#passwordConfirmErrorDiv").html("Password input twice does not match");	
+		}
+		else {
+			$("#passwordConfirmErrorDiv").html("");	
+
+		}
+	};// @lock
 
 	signInButton.click = function signInButton_click (event)// @startlock
 	{// @endlock
@@ -41,10 +66,11 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 			phone: WAF.sources.signUpObject.phone,
 			fax: WAF.sources.signUpObject.fax,
 			email: WAF.sources.signUpObject.email,
-			location: WAF.sources.signUpObject.location
+			location: WAF.sources.signUpObject.location,
+			role: WAF.sources.signUpObject.role
 							
 		};
-		if(signUpData.logIn === undefined | signUpData.password === undefined | signUpData.fullName === undefined ) {
+		if(signUpData.logIn === undefined | signUpData.password === undefined | signUpData.fullName === undefined | $$("passwordConfirmErrorDiv").getValue() ) {
 			$("#signUperrDiv").html("Please fill all the required fileds");
 		}
 		else {
@@ -92,6 +118,9 @@ WAF.onAfterInit = function onAfterInit() {// @lock
 	};// @lock
 
 // @region eventManager// @startlock
+	WAF.addListener("signUpDeptSelect", "change", signUpDeptSelect.change, "WAF");
+	WAF.addListener("document", "onLoad", documentEvent.onLoad, "WAF");
+	WAF.addListener("signUpConfirmPwField", "blur", signUpConfirmPwField.blur, "WAF");
 	WAF.addListener("signInButton", "click", signInButton.click, "WAF");
 	WAF.addListener("signUpButton", "click", signUpButton.click, "WAF");
 	WAF.addListener("textToSignIn", "click", textToSignIn.click, "WAF");

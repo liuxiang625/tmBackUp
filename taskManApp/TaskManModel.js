@@ -17,7 +17,13 @@ guidedModel =// @startlock
 					newUser.ID = ds.User.max("ID")  + 1;   
           			newUser.logIn = signUpData.logIn;     
           			newUser.password = signUpData.password;     
-          			newUser.fullName = signUpData.fullName;     
+          			newUser.fullName = signUpData.fullName; 
+          			newUser.phone = signUpData.phone;
+          			newUser.email = signUpData.email;   
+          			newUser.fax = signUpData.fax;   
+          			newUser.location = signUpData.location;
+          			newUser.department = signUpData.department;
+          			(signUpData.role === undefined) ?newUser.role = "User":newUser.role = signUpData.role;          
           			newUser.save();     // save the entity
           			sessionRef.unPromote(promoteToken); //put the session back to normal.
           			if (loginByPassword(signUpData.logIn, signUpData.password)) {

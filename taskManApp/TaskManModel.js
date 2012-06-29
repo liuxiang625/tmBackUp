@@ -23,7 +23,7 @@ guidedModel =// @startlock
           			newUser.fax = signUpData.fax;   
           			newUser.location = signUpData.location;
           			newUser.department = signUpData.department;
-          			(signUpData.role === undefined) ?newUser.role = "User":newUser.role = signUpData.role;          
+          			(!signUpData.role) ?newUser.role = "User":newUser.role = signUpData.role;          
           			newUser.save();     // save the entity
           			sessionRef.unPromote(promoteToken); //put the session back to normal.
           			if (loginByPassword(signUpData.logIn, signUpData.password)) {
